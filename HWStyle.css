@@ -1,0 +1,125 @@
+*{margin: 0; padding: 0; box-sizing: content-box;}
+
+body {
+	background: black;
+}
+.TopDiv {
+	display: flex;
+	padding: 50px;
+	background: black;
+	color: white;
+	height: 100vh;
+}
+
+.Left {
+	display: flex;
+	width: 45%;
+	flex-direction: column;
+}
+.Left h1 {
+	font-size: 80px;
+}
+.Left img {
+	width: 100%;
+	height: 700px;
+	object-fit: cover;
+	object-position: right;
+}
+
+.Right {
+	display: flex;
+	width: 55%;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: right;
+}
+.BackText {
+	color: grey;
+	opacity: 0.6;
+	font-size: 150px;
+}
+.bodytext {
+	width: 75%;
+	margin-left: 25%;
+}
+.BottomDiv {
+	display: flex;
+	flex-wrap: wrap;
+
+	width: 55%;
+	margin-left: 45%;
+	font-size: 35px;
+	font-weight: bold;
+	text-align: center;
+}
+.BottomDiv p {
+	flex-grow: 1;
+}
+
+.ActorDiv {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	color: white;
+}
+.Background {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+
+	height: 100%;
+	width: 100%;
+
+	background: black;
+}
+.Background h2 {
+	float: right;
+}
+
+.Foreground {
+	text-align: center;
+}
+.Foreground h2 {
+	color: white;
+	font-size: 40px;
+	margin-top: 90px;
+}
+.ActorIMGDIV {
+	margin-top: 50px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+.ActorIMG {
+	width: 200px;
+	height: 300px;
+	margin: 50px 150px;
+	background: white;
+		border-radius: 20px 20px 0 0;
+}
+.ActorIMG img {
+	height: 90%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 20px 20px 0 0;
+}
+.ActorIMG p {
+	width: 100%;
+	height: 9%;
+	margin: 10px 0;
+	background: white;
+	color: black;
+	text-align: center;
+		border-radius: 20px;
+}
+
+.pen {
+
+	margin: 100px auto;
+	background: blueviolet;
+	border-radius: 30px;
+	width: 250px;
+}

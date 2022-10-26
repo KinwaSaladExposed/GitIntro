@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{margin: 0; padding: 0; font-family: 'Lato', sans-serif; box-sizing: border-box;}
+
+.Menu {
+	background: black;
+	display: flex;
+	flex-direction: column;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	height: 100vh;
+
+	z-index: 10;
+}
+.MI {
+	margin: 20px;
+}
+.MI:hover {
+	animation: shake 1s 1;
+}
+
+.BottomMenu {
+	background: black;
+	display: flex;
+	flex-direction: column;
+
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 10;
+
+}
+.BMI {
+	margin: 15px;
+}
+.BMI:hover {
+	animation: shake 1s 1;
+}
+
+.HeadingContainer {
+	display: flex;
+	height: 100vh;
+
+	padding-left: 90px;
+}
+.HC_Left, .HC_Right {
+	width: 50%;
+	height: 100%;
+	display: flex;
+}
+
+.HC_Left {
+	flex-wrap: wrap;
+}
+.HCL {
+	width: 50%;
+	height: 50%;
+}
+.HCLC1 {
+	background: #23526d;
+}
+.HCLC2 {
+	background: #ff6969;
+}
+.HCLC3 {
+	background: #ffe49d;
+}
+.HCLC4 {
+	background: #67c5e2;
+
+	border-radius: 0 0 50% 0;
+}
+
+.HC_Right {
+	flex-direction: column;
+	justify-content: space-between;
+}
+.HCR_MT {
+	text-align: right;
+
+	font-size: 200px;
+	font-weight: 300;
+}
+.HCR_MT span {
+	font-weight: 700;
+}
+
+.HCR_Content {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.HCRC {
+	width: 40%;
+	flex-grow: 1;
+	text-align: center;
+
+	background: #f0f0f0;
+	border-radius: 30px;
+	padding: 10px 0;
+	margin: 10px 20px;
+
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.About {
+	position: relative;
+
+	width: 100%;
+	height: 100vh;
+}
+.About_Content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+}
+
+.AC_Right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	justify-content: space-around;
+}
+.ACRI {
+
+}
+.ACR_Item1 {
+	width: 217px;
+	height: 222px;
+	background: #547bc7;
+	box-shadow: 10px 10px 0 #1d1d1d;
+	border-radius: 0 20px;
+
+	align-self: flex-end;
+}
+.ACR_Item2 {
+	width: 174px;
+	height: 166px;
+	background: #3993ba;
+	box-shadow: 10px 10px 0 #1d1d1d;
+	border-radius: 0 20px;
+}
+.ACR_Item3 {
+	width: 269px;
+	height: 174px;
+	background: #e36fc3;
+	box-shadow: 10px 10px 0 #1d1d1d;
+	border-radius: 0 20px;
+
+	align-self: flex-start;
+}
+
+.AC_Left {
+	padding-left: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.AC_Left h2 {
+	color: white;
+	font-size: 50px;
+}
+.AC_Left p {
+	color: white;
+	font-size: 30px;
+
+	width: 75%;
+}
+
+.About_Background {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	width: 100%;
+
+	z-index: -1;
+	background: #ff6969;
+}
+.ABP {
+	font-size: 150px;
+	font-weight: 700;
+	opacity: 0.2;
+
+	padding-left: 90px;
+}
+
+.DesignDiv {
+	height: 100vh;
+	width: 100%;
+
+	position: relative;
+}
+
+.DD_Background {
+	height: 100%;
+	width: 100%;
+
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	background: #ffe49d;
+}
+
+.DD_Foreground {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+	padding-left: 90px;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.DD_Foreground h2 {
+	font-size: 50px;
+	width: 40%;
+}
+.DD_Foreground p {
+	font-size: 50px;
+	width: 40%;
+}
+.DD_Foreground img {
+	width: 40%;
+	flex-grow: 1;
+}
+
+.PhotoDiv {
+	height: 100vh;
+	width: 100%;
+
+	display: flex;
+}
+.PD_Left {
+	background: url("img/pictures/4th-section-img.png") center/cover no-repeat;
+	flex-grow: 1;
+	flex-basis: 500px;
+}
+
+.PD_Right {
+	position: relative;
+	overflow: hidden;
+	flex-grow: 2;
+	flex-basis: 33%;
+}
+.PDR_Content {
+	color: white;
+	float: right;
+}
+.PDRC_MT {
+	font-size: 50px;
+	text-align: right;
+}
+.PDRC_Text {
+	font-size: 30px;
+	text-align: right;
+}
+.PDR_Background {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+
+	background: #23536d;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+.PDRB_MT {
+	font-size: 150px;
+	font-weight: 700;
+	opacity: 0.2;
+}
+.PDRB_IMG {
+	background: url("img/pictures/4th-section-bg.svg") center/cover no-repeat;
+	width: 100%;
+	height: 30%;
+}
+
+.Portfolio {
+
+}
+.Port_Text {
+	background: #ff6969;
+	text-align: right;
+	color: white;
+	font-size: 50px;
+
+	padding: 100px 0 100px 90px;
+}
+
+.Port_Pictures {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 90px;
+}
+.PoPi_Image {
+	width: 50%;
+	flex-basis: 300px;
+	flex-grow: 1;
+
+	opacity: 0.5;
+	transition: .8s;
+}
+.PoPi_Image:hover {
+	opacity: 1;
+}
+
+.PPI_1 {
+	order: 7;
+}
+.PPI_2 {
+	order: 6;
+}
+.PPI_3 {
+	order: 5;
+}
+.PPI_4 {
+	order: 4;
+}
+.PPI_5 {
+	order: 3;
+}
+
+.FormDiv {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+}
+.FD_Left {
+	background: url("img/pictures/form-left.png") center/cover no-repeat;
+}
+.FD_Right {
+	background: url("img/pictures/form-right.png") center/cover no-repeat;
+}
+.FD_Right, .FD_Left {
+	/*
+	flex-basis: 300px;
+	flex-grow: 1;
+	flex-shrink: 5;
+	*/
+
+	flex: 1 5 300px;
+}
+
+.FD_Mid {
+	/*
+	flex-grow: 3;
+	flex-shrink: 1;
+	*/
+	flex: 3 1 auto;
+	color: white;
+	background: #23536d;
+}
+.FDM_MT {
+	text-align: right;
+	font-size: 50px;
+	padding: 30px 0;
+}
+
+.FDM_Form {
+	display: flex;
+	flex-direction: column;
+}
+.FDMF_Label {
+	font-size: 30px;
+	margin: 0 0 10px 15px;
+}
+.FDMF_Input {
+	padding: 8px;
+	margin: 0 15px 30px 15px;
+}
+.FDMF_Select {
+	padding: 8px;
+	margin: 0 15px 30px 15px;
+}
+.FDMF_Input2 {
+	width: 30px;
+	height: 30px;
+	margin: 15px;
+}
+button {
+	padding: 20px 40px;
+	margin: 30px auto;
+	font-weight: 600;
+	color: white;
+
+	background: black;
+
+	border-radius: 0 20px 0 20px;
+	border: none;
+	transition: .5s;
+}
+button:hover {
+	transform: scale(1.05);
+	border-radius: 10px;
+	box-shadow: 0 0 30px darkcyan;
+}
+
+@media(max-width: 1300px) {
+	.HCR_MT {
+		font-size: 130px;
+	}
+	.ABP {
+		font-size: 70px;
+	}
+
+	.HeadingContainer {
+		flex-direction: column;
+		padding-left: 0;
+	}
+	.HC_Left, .HC_Right {
+		width: 100%;
+	}
+
+	.Menu {
+		flex-direction: row;
+		height: 90px;
+		width: 100%;
+	}
+
+	.About_Content {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.AC_Right {
+		flex-direction: row;
+		width: 100%;
+	}
+	.AC_Left {
+		padding-left: 0;
+	}
+
+	.DD_Foreground {
+		flex-direction: column;
+		padding-left: 0;
+	}
+	.DD_Foreground h2, .DD_Foreground p, .DD_Foreground img {
+		width: 100%;
+	}
+	.DD_Foreground img {
+		flex-grow: 0;
+	}
+
+	.PhotoDiv {
+		flex-direction: column;
+	}
+	.PDRB_IMG {
+		height: 50%;
+	}
+
+	.Port_Text {
+		padding-left: 0;
+	}
+	.Port_Pictures {
+		padding-left: 0;
+	}
+
+@keyframes shake {
+	0%{
+		transform: rotate(0);
+	}
+	35% {
+		transform: rotate(10deg);
+	}
+	70% {
+		transform: rotate(-10deg);
+	}
+	100% {
+		transform: rotate(0);
+	}
+}
